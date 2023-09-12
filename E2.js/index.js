@@ -64,7 +64,7 @@ const pizzas = [
 const pizzasIdImpar = pizzas.filter(function(pizza) {
   return pizza.id % 2 !== 0;
 });
-console.log("pizzas con id impar son: ");
+console.log("Las pizzas con id impar son: ");
 console.log(pizzasIdImpar);
 
 
@@ -74,11 +74,12 @@ const pizzaMasBarata = pizzas.some(function(pizza) {
   return pizza.precio < 600;
 });
 
+console.log("si hay pizza menos a $600");
 console.log(pizzaMasBarata);
 
 
 // c) El nombre de cada pizza con su respectivo precio.
-console.log("nombre y precio de cada pizza");
+console.log("Nombre y precio de cada pizza");
 pizzas.forEach(function(pizza) {
   console.log(pizza.nombre, pizza.precio);
 });
